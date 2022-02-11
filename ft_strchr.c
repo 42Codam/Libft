@@ -6,7 +6,7 @@
 /*   By:                                              +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/02/02 08:30:30 by rbulbul       #+#    #+#                 */
-/*   Updated: 2022/02/03 18:25:56 by rbulbul       ########   odam.nl         */
+/*   Updated: 2022/02/11 10:28:45 by rbulbul       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	int				i;
+	size_t			i;
 	unsigned char	us_c;
 	char			*ptr_s;
 
@@ -29,5 +29,9 @@ char	*ft_strchr(const char *s, int c)
 		}
 		i++;
 	}
-	return (NULL);
+	if(i == ft_strlen(s))
+	{
+		return (&ptr_s[i]);
+	}
+	return (0);
 }

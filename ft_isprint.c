@@ -6,7 +6,7 @@
 /*   By: rbulbul <rbulbul@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/01/31 13:35:23 by rbulbul       #+#    #+#                 */
-/*   Updated: 2022/02/01 12:54:12 by rbulbul       ########   odam.nl         */
+/*   Updated: 2022/02/10 18:52:51 by rbulbul       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,8 @@
 
 int	ft_isprint(int c)
 {
-	if (c >= 32 && c <= 127)
+	c = (unsigned char)c;
+	if (c >= 32 && c < 127)
 	{
 		return (1);
 	}
