@@ -6,7 +6,7 @@
 /*   By:                                              +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/02/02 08:30:30 by rbulbul       #+#    #+#                 */
-/*   Updated: 2022/02/11 10:28:45 by rbulbul       ########   odam.nl         */
+/*   Updated: 2022/02/15 16:36:36 by rbulbul       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,23 +15,15 @@
 char	*ft_strchr(const char *s, int c)
 {
 	size_t			i;
-	unsigned char	us_c;
-	char			*ptr_s;
 
-	ptr_s = (char *)s;
-	us_c = c;
 	i = 0;
 	while (s[i] != '\0')
 	{
-		if (s[i] == us_c)
-		{
-			return (&ptr_s[i]);
-		}
+		if (s[i] == (unsigned char)c)
+			return (&((char *)s)[i] );
+		else if (s[i + 1] == '\0' && (unsigned char)c == '\0')
+			return (&((char *)s)[i+1]);
 		i++;
-	}
-	if(i == ft_strlen(s))
-	{
-		return (&ptr_s[i]);
 	}
 	return (0);
 }

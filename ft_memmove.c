@@ -6,7 +6,7 @@
 /*   By: rbulbul <rbulbul@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/02/01 13:47:42 by rbulbul       #+#    #+#                 */
-/*   Updated: 2022/02/10 13:48:10 by rbulbul       ########   odam.nl         */
+/*   Updated: 2022/02/15 15:29:31 by rbulbul       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,9 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	size_t	i;
 	char	*p_src = (char *)src;
 	char	*p_dst = (char *)dst;
+
+		if (src == NULL && dst == NULL)
+		return (NULL);
 
 	p_src = (char *)src;
 	p_dst = (char *)dst;

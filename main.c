@@ -6,7 +6,7 @@
 /*   By: rbulbul <rbulbul@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/02/01 12:11:22 by rbulbul       #+#    #+#                 */
-/*   Updated: 2022/02/10 15:33:27 by rbulbul       ########   odam.nl         */
+/*   Updated: 2022/02/14 19:22:34 by rbulbul       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -151,48 +151,43 @@ int	main(void)
     */
 
     // isprint
-    /* 
-    int var1 = 'd';
-	int var2 = '2';
-	int var3 = '\t';
-	int var4 = ' ';
-
-	if (ft_isprint(var1))
+    
+	/* if (ft_isprint('~' + 1))
 	{
-		printf("var1 = |%c| can be printed\n", var1);
+		printf("var1 = |%c| can be printed\n");
 	}
 	else
 	{
-		printf("var1 = |%c| can't be printed\n", var1);
+		printf("var1 = |%c| can't be printed\n");
 	}
 
-	if (ft_isprint(var2))
+	if (!ft_isprint(' ' - 1))
 	{
-		printf("var2 = |%c| can be printed\n", var2);
+		printf("var2 = |%c| can be printed\n");
 	}
 	else
 	{
-		printf("var2 = |%c| can't be printed\n", var2);
+		printf("var2 = |%c| can't be printed\n");
 	}
 
-	if (ft_isprint(var3))
+	if (ft_isprint(' '))
 	{
-		printf("var3 = |%c| can be printed\n", var3);
+		printf("var3 = |%c| can be printed\n");
 	}
 	else
 	{
-		printf("var3 = |%c| can't be printed\n", var3);
+		printf("var3 = |%c| can't be printed\n");
 	}
-	if (ft_isprint(var4))
+	if (ft_isprint('~'))
 	{
-		printf("var4 = |%c| can be printed\n", var4);
+		printf("var4 = |%c| can be printed\n");
 	}
 	else
 	{
-		printf("var4 = |%c| can't be printed\n", var4);
+		printf("var4 = |%c| can't be printed\n");
 	}
-    */
-
+   
+ */
     // strlen
     /* 
     	printf("%zu\n", ft_strlen("Ramazan"));
@@ -243,12 +238,12 @@ int	main(void)
 
 	// strlcpy
 	
-	/* 
+	
 	char string[] = "Hello there, Venus";
     char buffer[19];
     int r;
 
-    r = ft_strlcpy(buffer,string,19);
+    r = ft_strlcpy(buffer,string,0);
     printf("Copied '%s' into '%s', length %d\n",string,buffer,r);
     r = ft_strlcpy(buffer,string,10);
     printf("Copied '%s' into '%s', length %d\n",string,buffer,r);
@@ -256,7 +251,7 @@ int	main(void)
     printf("Copied '%s' into '%s', length %d\n",string,buffer,r);
     r = ft_strlcpy(buffer,string,0);
     printf("Copied '%s' into '%s', length %d\n",string,buffer,r);
-	*/
+	
 	// strlcat: string concanitation
 	/* 
 	char first[] = "This is ";
@@ -300,38 +295,36 @@ int	main(void)
 
 	// strchr
 	
-	/* 
-	const char	str[] = "This is just a String"; 
-	const char	ch = 'a'; 
+	
+/* 	const char	ch = 'z'; 
 	char		*p;
-	p = ft_strchr(str, ch);
-	if (NULL != p)
+	char s[] = "tripouille";
+	if (ft_strchr(s, 'z') == 0)
 	{
-		printf("String starting from %c is:\n|%s|", ch, p);
+		printf("Character has founded!");
 	}
 	else
 	{
 		printf("No character has founded!");
-	}
-	*/
+	} */
+	
 
 	// strrchr
-	/* 	
-	const char	str[] = "This is just a String";
+		
+/* 	char s[] = "tripouille";
 	const char	ch = 'i'; 
-	char		*p;
-	p = ft_strrchr(str, ch);
-	if (NULL != p)
+
+	if (ft_strrchr(s, 't') == s)
 	{
-		printf("String starting from %c is: %s", ch, p);
+		printf("String starting from is: ");
 	}
 	else
 	{
 		printf("No character has founded!");
-	}
-	*/
+	} */
+	
 
-	// strncpy
+	// strlcmp
 	
 /* 	
 char str1[15];
@@ -372,7 +365,8 @@ char str1[15];
 
 	// memcmp
 	
-	char s[] = {-128, 0, 127, 0};
+/* 	
+char s[] = {-128, 0, 127, 0};
 	char sCpy[] = {-128, 0, 127, 0};
 	char s2[] = {0, 0, 127, 0};
 	char s3[] = {0, 0, 42, 0};
@@ -384,7 +378,7 @@ char str1[15];
 	else if( result == 0 )
 	   printf( "First is equal to second.\n" );
 	else
-	   printf( "First is greater than second.\n" );	
+	   printf( "First is greater than second.\n" );	 */
 	
 
 	// strnstr
@@ -396,5 +390,9 @@ char str1[15];
 	ptr = ft_strnstr(largestring, smallstring, 12);
 	printf("%s\n",ptr); */
 
-	/* return(0); */
+	// atoi
+	
+	
+
+	return(0);
 }

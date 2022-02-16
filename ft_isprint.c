@@ -6,21 +6,15 @@
 /*   By: rbulbul <rbulbul@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/01/31 13:35:23 by rbulbul       #+#    #+#                 */
-/*   Updated: 2022/02/10 18:52:51 by rbulbul       ########   odam.nl         */
+/*   Updated: 2022/02/15 14:37:59 by rbulbul       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h> // The first 32 characters in the ASCII-table are unprintable
+// The first 32 characters in the ASCII-table are unprintable
 
 int	ft_isprint(int c)
 {
-	c = (unsigned char)c;
 	if (c >= 32 && c < 127)
-	{
 		return (1);
-	}
-	else
-	{
-		return (0);
-	}
+	return (0);
 }
