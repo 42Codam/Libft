@@ -6,7 +6,7 @@
 /*   By: rbulbul <rbulbul@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/02/14 14:00:56 by rbulbul       #+#    #+#                 */
-/*   Updated: 2022/02/21 22:24:02 by rbulbul       ########   odam.nl         */
+/*   Updated: 2022/02/28 15:06:19 by rbulbul       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_calloc(size_t count, size_t size)
 {
-	size_t	*ptr;
+	void	*ptr;
 
 	ptr = malloc(count * size);
 	if (!(ptr))

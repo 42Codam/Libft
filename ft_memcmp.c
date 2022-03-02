@@ -6,7 +6,7 @@
 /*   By: rbulbul <rbulbul@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/02/07 13:16:18 by rbulbul       #+#    #+#                 */
-/*   Updated: 2022/02/21 11:43:39 by rbulbul       ########   odam.nl         */
+/*   Updated: 2022/02/28 15:00:32 by rbulbul       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,15 +23,8 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	i = 0;
 	while (i < n)
 	{
-		if (p_s1[i] == p_s2[i])
-		{
-			i++;
-			continue ;
-		}
-		else if (p_s2[i] < p_s1[i])
-			return ((p_s1[i] - p_s2[i]));
-		else
-			return ((p_s2[i] - p_s1[i]));
+		if (p_s1[i] != p_s2[i])
+			return (p_s1[i] - p_s2[i]);
 		i++;
 	}
 	return (0);

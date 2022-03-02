@@ -6,7 +6,7 @@
 /*   By: rbulbul <rbulbul@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/02/22 15:28:16 by rbulbul       #+#    #+#                 */
-/*   Updated: 2022/02/27 16:55:43 by rbulbul       ########   odam.nl         */
+/*   Updated: 2022/02/28 21:45:16 by rbulbul       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,15 +33,15 @@ char	*ft_strtrim(char const *s1, char const *set)
 	return (str_ptr);
 }
 
-// int	main(void)
-// {
-// 	char	*str;
-// 	char	*set;
-// 	char	*new_str;
+/* int	main(void)
+{
+	char	*str;
+	char	*set;
+	char	*new_str;
 
-// 	str = "    ";
-// 	set = " ";
-// 	new_str = ft_strtrim(str, set);
-// 	printf("%s", new_str);
-// 	return (0);
-// }
+	str = "    ";
+	set = " ";
+	new_str = ft_strtrim(str, set);
+	printf("%s", new_str);
+	return (0);
+} */
