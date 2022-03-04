@@ -6,7 +6,7 @@
 /*   By: rbulbul <rbulbul@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/02/27 20:29:05 by rbulbul       #+#    #+#                 */
-/*   Updated: 2022/03/03 13:59:59 by rbulbul       ########   odam.nl         */
+/*   Updated: 2022/03/03 15:36:42 by rbulbul       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,11 +52,25 @@ static char	*create_words(char const *s, char c)
 	return (0);
 }
 
+static char	**free_arr(char **arr, int rows)
+{
+	int	i;
+
+	i = 0;
+	while (i < rows)
+	{
+		free(arr[i]);
+		i++;
+	}
+	free(arr);
+	return (NULL);
+}
+
 char	**ft_split(char const *s, char c)
 {
 	char	**arr;
+	int		arr_index;
 	int		i;
-	int		j;
 
 	if (!s)
 		return (NULL);
@@ -64,33 +78,35 @@ char	**ft_split(char const *s, char c)
 	if (!arr)
 		return (NULL);
 	i = 0;
-	j = 0;
+	arr_index = 0;
 	while (s[i])
 	{
 		while (s[i] == c)
 			i++;
 		if (s[i] == '\0')
 			break ;
-		arr[j] = create_words(&s[i], c);
-		i += ft_strlen(arr[j]);
-		j++;
+		arr[arr_index] = create_words(&s[i], c);
+		if (!arr[arr_index])
+			return (free_arr(arr, arr_index));
+		i += ft_strlen(arr[arr_index]);
+		arr_index++;
 	}
-	arr[j] = NULL;
+	arr[arr_index] = NULL;
 	return (arr);
 }
 
-/* int    main(void)
-{
-    char    **list;
+// int    main(void)
+// {
+//     char    **list;
 
-    list = ft_split("    LOL  HAHAHAH      UO Yes!      ", ' ');
-    if (list == NULL)
-        return (1);
-    while (*list)
-    {
-        printf("%s\n", *list);
-        list++;
-    }
-	// system("leaks a.out");
-    return (0);
-} */
+//     list = ft_split("    LOL  HAHAHAH      UO Yes!      ", ' ');
+//     if (list == NULL)
+//         return (1);
+//     while (*list)
+//     {
+//         printf("%s\n", *list);
+//         list++;
+//     }
+// 	system("leaks a.out");
+//     return (0);
+// } 
