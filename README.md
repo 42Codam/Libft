@@ -20,7 +20,7 @@ In 42AMSTERDAM, it is forbidden to proceed with a project using already defined 
 
 - If sub-functions are needed to write complex functions, these sub-functions should be defined as static so that they are not published with the library.
 
-### 3. 함수 리스트
+### 3. Function list
 
 The functions of this library can be divided into three parts.
 
