@@ -6,18 +6,18 @@
 /*   By: rbulbul <rbulbul@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/03/04 16:23:35 by rbulbul       #+#    #+#                 */
-/*   Updated: 2022/03/06 19:16:09 by rbulbul       ########   odam.nl         */
+/*   Updated: 2022/03/07 10:54:50 by rbulbul       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static void	recur(unsigned int n, int fd)
+static void	print_num(unsigned int n, int fd)
 {
 	char	c;
 
 	if (n > 9)
-		recur(n / 10, fd);
+		print_num(n / 10, fd);
 	c = (n % 10) + 48;
 	write(fd, &c, 1);
 }
@@ -29,7 +29,7 @@ void	ft_putnbr_fd(int n, int fd)
 		n *= -1;
 		write(fd, "-", 1);
 	}
-	recur ((unsigned int)n, fd);
+	print_num ((unsigned int)n, fd);
 }
 
 /* int	main(void)
