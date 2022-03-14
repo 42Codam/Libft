@@ -6,7 +6,7 @@
 /*   By: rbulbul <rbulbul@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/03/10 11:51:18 by rbulbul       #+#    #+#                 */
-/*   Updated: 2022/03/10 14:07:20 by rbulbul       ########   odam.nl         */
+/*   Updated: 2022/03/14 09:21:27 by rbulbul       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 		lst = lst->next;
 	}
 }
+
 /* 
 int	main(void)
 {
