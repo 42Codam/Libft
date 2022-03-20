@@ -1,11 +1,21 @@
-#ifndef LIBFT_H
-#define LIBFT_H
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        ::::::::            */
+/*   libft.h                                            :+:    :+:            */
+/*                                                     +:+                    */
+/*   By: rbulbul <rbulbul@student.codam.nl>           +#+                     */
+/*                                                   +#+                      */
+/*   Created: 2022/03/14 11:11:50 by rbulbul       #+#    #+#                 */
+/*   Updated: 2022/03/20 16:08:50 by rbulbul       ########   odam.nl         */
+/*                                                                            */
+/* ************************************************************************** */
 
-#include <stddef.h>
-#include <string.h> //
-#include <stdio.h> //
-#include <unistd.h> //
-#include <stdlib.h>
+#ifndef LIBFT_H
+# define LIBFT_H
+
+# include <stddef.h>
+# include <unistd.h>
+# include <stdlib.h>
 
 typedef struct s_list
 {
