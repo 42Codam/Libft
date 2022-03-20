@@ -6,18 +6,14 @@
 /*   By: rbulbul <rbulbul@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/01/31 12:33:35 by rbulbul       #+#    #+#                 */
-/*   Updated: 2022/02/01 12:53:59 by rbulbul       ########   odam.nl         */
+/*   Updated: 2022/03/20 18:22:14 by rbulbul       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isalpha(int c)
 {
 	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
-	{
 		return (1);
-	}
 	else
-	{
 		return (0);
-	}
 }

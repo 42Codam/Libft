@@ -6,7 +6,7 @@
 /*   By: rbulbul <rbulbul@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/03/10 11:51:18 by rbulbul       #+#    #+#                 */
-/*   Updated: 2022/03/20 14:43:22 by rbulbul       ########   odam.nl         */
+/*   Updated: 2022/03/20 18:08:30 by rbulbul       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,17 +22,3 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 		lst = lst->next;
 	}
 }
-
-/* 
-int	main(void)
-{
-	t_list	*new;
-	void	*ptr;
-	int		num;
-
-	ptr = &num;
-	new = ft_lstnew(ptr);
-	printf("%i",((int)new)->content);
-	
-	return (0);
-} */
