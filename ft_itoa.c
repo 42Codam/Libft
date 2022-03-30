@@ -6,7 +6,7 @@
 /*   By: rbulbul <rbulbul@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/03/03 15:41:40 by rbulbul       #+#    #+#                 */
-/*   Updated: 2022/03/04 09:38:16 by rbulbul       ########   odam.nl         */
+/*   Updated: 2022/03/20 18:25:21 by rbulbul       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,12 +54,3 @@ char	*ft_itoa(int n)
 	}
 	return (char_n);
 }
-
-/* int main(void)
-{
-	int number = -2147483648;
-
-    char *charValue = ft_itoa(number);
-    printf("The value of number is : %s\n", charValue);
-    return 0;
-}  */

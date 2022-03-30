@@ -6,7 +6,7 @@
 /*   By: rbulbul <rbulbul@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/02/07 13:16:18 by rbulbul       #+#    #+#                 */
-/*   Updated: 2022/02/28 15:00:32 by rbulbul       ########   odam.nl         */
+/*   Updated: 2022/03/20 18:25:52 by rbulbul       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,20 +29,3 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
-
-/* int main () {
-  char *str1 = "atoms\0\0\0\0";
-  char *str2 = "atoms\0abc";
-  int ret;
-
-  ret = ft_memcmp(str1, str2, 7);
-
-  if(ret > 0) {
-    printf("str2 is less than str1");
-  } else if(ret < 0) {
-    printf("str1 is less than str2");
-  } else {
-    printf("str1 is equal to str2");
-  }
-   return(0);
-} */

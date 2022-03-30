@@ -6,7 +6,7 @@
 /*   By: rbulbul <rbulbul@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2022/02/27 20:29:05 by rbulbul       #+#    #+#                 */
-/*   Updated: 2022/03/03 15:36:42 by rbulbul       ########   odam.nl         */
+/*   Updated: 2022/03/23 15:59:36 by rbulbul       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,7 @@ static int	count_words(char const *s, char c)
 	while (s[i])
 	{
 		if (last == c && s[i] != c)
-		{
 			j++;
-		}
 		last = s[i];
 		i++;
 	}
@@ -94,19 +92,3 @@ char	**ft_split(char const *s, char c)
 	arr[arr_index] = NULL;
 	return (arr);
 }
-
-// int    main(void)
-// {
-//     char    **list;
-
-//     list = ft_split("    LOL  HAHAHAH      UO Yes!      ", ' ');
-//     if (list == NULL)
-//         return (1);
-//     while (*list)
-//     {
-//         printf("%s\n", *list);
-//         list++;
-//     }
-// 	system("leaks a.out");
-//     return (0);
-// } 
